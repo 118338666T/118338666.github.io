@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> My Interests </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+/*Style the header */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #E3EDD8;
+  color: white;
+}
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 40px;
+}
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #E3EDD8;
+}
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+</style>
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+#container {
+  overflow: hidden;
+  width: 800px;
+  height: 230px;
+  margin: 0 auto;
+  cursor: pointer;
+  margin-top:150px;
+}
+#imgs {
+  display: block;
+  padding: 0;
+  width: 200%;
+}
+#imgs li {
+  padding-right: 10px;
+  display: inline-block;
+ *display:inline;
+}
+#imgs img {
+  width: 160px;
+  height: 120px;
+}
+.title {
+  display: block;
+  width: 100%;
+  height: 38px;
+  line-height: 38px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  background: #ddd;
+}
+#colour{
+background-color:#e3edd8
+}
+</style>
+
+</head>
+<body>
+<div class="header">
+  <h1> My Interests </h1>
+</div>
+<div class="navbar">
+  <a href="homepage.html"> Return to Home Page</a>
+</div>
+
+<div class="container">
+ <span class="title">Travel</span>
+  <ul id="imgs">
+    <li><img src="https://www.greektravel.com/greekislands/ios/ios-greece01.jpg" alt="" /></li>
+    <li><img src="https://www.telegraph.co.uk/content/dam/Travel/2019/June/split%20croatia.jpg?imwidth=450" alt="" /></li>
+    <li><img src="https://s27363.pcdn.co/wp-content/uploads/2018/10/Bled-Island.jpg.optimal.jpg" alt="" /></li>
+    <li><img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/stunning-santorini-sunset-santorini-greece-global-light-photography-nicole-leffer.jpg" alt="" /></li>
+    <li><img src="https://unsplash.it/800/600?image=485" alt="" /></li>
+    <li><img src="https://unsplash.it/800/600?image=484" alt="" /></li>
+    <li><img src="https://unsplash.it/800/600?image=483" alt="" /></li>
+  </ul>
+  <span class="title"></span> </div>
+<div id="controler"> </div>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="lib/ImageScroll.js"></script>
+<script type="text/javascript">
+
+
+
+
+
+  $('#imgs').imageScroll({
+    orientation:"left",
+    speed:600,
+    interval:1000,
+    hoverPause:true,
+    callback:function(){
+      var ordinal = $(this).find("img").first().attr("src");
+      <!-- console.log(ordinal); -->
+      $(this).next("span").text("CallbackDisplay: hidden "+ordinal+"!");
+    }
+  });
+  </script><script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<div id="colour">
+	<h2> Last Summer I did plenty of travelling; visiting both Ios and Croatia for 3 weeks </h2>
+	<h3> The summer before that i was inter railing for a month, where I travelled to Amsterdam, Prague, Berlin, Krakow and Croatia </h3>
+	<h4> This summer I intend on doing my J1 and travelling to Vancouver for 3 months to work </h4>
+	</div>	
+<div class="container">
+ <span class="title">Sport</span>
+ 
+ <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+#container {
+  overflow: hidden;
+  width: 800px;
+  height: 230px;
+  margin: 0 auto;
+  cursor: pointer;
+  margin-top:150px;
+}
+#imgs {
+  display: block;
+  padding: 0;
+  width: 200%;
+}
+#imgs li {
+  padding-right: 10px;
+  display: inline-block;
+ *display:inline;
+}
+#imgs img {
+  width: 160px;
+  height: 120px;
+}
+.title {
+  display: block;
+  width: 100%;
+  height: 38px;
+  line-height: 38px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  background: #ddd;
+}
+#colour{
+background-color:#e3edd8
+}
+</style>
+
+</head>
+
+<div class="container">
+
+  <ul id="imgs">
+    <li><img src="https://resources.world.rugby/photo-resources/worldrugby/photo/2019/09/07/918c6570-4785-4651-a595-60572f888267/1166482733.jpg?width=1300" alt="" /></li>
+    <li><img src="https://pbs.twimg.com/profile_images/513808396751876096/NzvwRc8O_400x400.jpeg" alt="" /></li>
+    <li><img src="https://www.surfertoday.com/images/stories/surfer-barreled.jpg" alt="" /></li>
+    <li><img src="https://i2-prod.walesonline.co.uk/incoming/article16960822.ece/ALTERNATES/s615/1_GettyImages-1176298761.jpg" alt="" /></li>
+    <li><img src="https://www.sailingscuttlebutt.com/wp-content/uploads/2020/03/2020-03-08_9-28-39-620x350.jpg" alt="" /></li>
+    <li><img src="https://i2-prod.walesonline.co.uk/incoming/article16960822.ece/ALTERNATES/s615/1_GettyImages-1176298761.jpg" alt="" /></li>
+    <li><img src="https://ssl.quiksilver.com/static/QS/default/category-assets/marketing-landing/landing/img/surf/tiles/surf_featured_1.jpg" alt="" /></li>
+  </ul>
+  <span class="title"></span> </div>
+<div id="controler"> </div>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="lib/ImageScroll.js"></script>
+<script type="text/javascript">
+
+
+
+
+
+  $('#imgs').imageScroll({
+    orientation:"left",
+    speed:600,
+    interval:1000,
+    hoverPause:true,
+    callback:function(){
+      var ordinal = $(this).find("img").first().attr("src");
+      <!-- console.log(ordinal); -->
+      $(this).next("span").text("CallbackDisplay: hidden "+ordinal+"!");
+    }
+  });
+  </script><script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+  
+</script>
+ <div id="colour">
+ <h2> I played many sports growing up, but as of now all I play is rugby </h2>
+ <h3> I play on the Senior Team for my college and take great pride in this as it is a very hard team to make </h3>
+ <h4> I have also have had a passion for sea sports such as surfing and sailing whiuch help me to travel etc. with my qualifications </h4>
+	</div>
+
+</div>
+
+</body>
+</html>
